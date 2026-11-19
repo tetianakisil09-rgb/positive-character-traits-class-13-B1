@@ -1,0 +1,1466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Positive Personality Traits — A2+ English Lesson</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif']
+          },
+          colors: {
+            sage: {
+              DEFAULT: '#5B8A72',
+              dark: '#466E59',
+              light: '#EBF3EE',
+              border: '#C8DDD2'
+            },
+            slateink: {
+              DEFAULT: '#2B3632',
+              muted: '#5A6962',
+              subtle: '#7D8C85'
+            },
+            mintsurf: {
+              DEFAULT: '#F4F9F6',
+              warm: '#FAFDFB'
+            }
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    /* Smooth subtle transitions for interactive elements */
+    .stage-panel {
+      animation: fadeSlideIn 0.25s ease-out;
+    }
+    @keyframes fadeSlideIn {
+      from {
+        opacity: 0;
+        transform: translateY(6px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    /* Custom scrollbar for clean reading */
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #f4f9f6;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #c8ddd2;
+      border-radius: 9999px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #9ec0ae;
+    }
+  </style>
+</head>
+<body class="bg-white text-slateink antialiased min-h-screen flex flex-col selection:bg-sage/20 selection:text-slateink">
+  <!-- Top Header & Navigation -->
+  <header class="sticky top-0 z-30 bg-white/95 backdrop-blur border-b border-sage-border">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 py-3.5">
+      <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+        <!-- Lesson Title & Level Badge -->
+        <div class="flex items-center gap-3">
+          <div class="w-9 h-9 rounded-xl bg-sage-light border border-sage-border flex items-center justify-center text-sage font-bold text-sm shrink-0">
+            A2+
+          </div>
+          <div>
+            <h1 class="text-base sm:text-lg font-bold tracking-tight text-slateink leading-snug">
+              Positive Personality Traits &amp; Character
+            </h1>
+            <p class="text-xs text-slateink-muted">
+              Speaking &amp; Vocabulary • Позитивні риси характеру
+            </p>
+          </div>
+        </div>
+
+        <!-- Ukrainian Helper Toggle -->
+        <div class="flex items-center justify-between sm:justify-end gap-2">
+          <button
+            id="toggleUaBtn"
+            type="button"
+            onclick="toggleUkrainianHints()"
+            class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-xs font-medium border border-sage-border bg-mintsurf hover:bg-sage-light text-slateink transition cursor-pointer"
+            title="Show or hide Ukrainian translations and hints"
+          >
+            <span id="uaIndicatorDot" class="w-2 h-2 rounded-full bg-sage"></span>
+            <span id="uaToggleLabel">UA Hints: ON</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Stage Tabs Navigation -->
+      <nav aria-label="Lesson stages" class="mt-3.5 flex items-center gap-1.5 sm:gap-2 overflow-x-auto pb-1">
+        <button
+          type="button"
+          data-stage="0"
+          onclick="goToStage(0)"
+          class="stage-tab px-3 py-2 rounded-xl text-xs sm:text-sm font-medium whitespace-nowrap transition cursor-pointer flex items-center gap-1.5"
+        >
+          <span class="w-5 h-5 rounded-full text-xs flex items-center justify-center font-semibold">1</span>
+          <span>5 Situations</span>
+        </button>
+
+        <button
+          type="button"
+          data-stage="1"
+          onclick="goToStage(1)"
+          class="stage-tab px-3 py-2 rounded-xl text-xs sm:text-sm font-medium whitespace-nowrap transition cursor-pointer flex items-center gap-1.5"
+        >
+          <span class="w-5 h-5 rounded-full text-xs flex items-center justify-center font-semibold">2</span>
+          <span>Vocabulary</span>
+        </button>
+
+        <button
+          type="button"
+          data-stage="2"
+          onclick="goToStage(2)"
+          class="stage-tab px-3 py-2 rounded-xl text-xs sm:text-sm font-medium whitespace-nowrap transition cursor-pointer flex items-center gap-1.5"
+        >
+          <span class="w-5 h-5 rounded-full text-xs flex items-center justify-center font-semibold">3</span>
+          <span>Ex. 1: Opposites</span>
+        </button>
+
+        <button
+          type="button"
+          data-stage="3"
+          onclick="goToStage(3)"
+          class="stage-tab px-3 py-2 rounded-xl text-xs sm:text-sm font-medium whitespace-nowrap transition cursor-pointer flex items-center gap-1.5"
+        >
+          <span class="w-5 h-5 rounded-full text-xs flex items-center justify-center font-semibold">4</span>
+          <span>Ex. 2: Definitions</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content Area -->
+  <main class="flex-1 max-w-5xl w-full mx-auto px-4 sm:px-6 py-6 sm:py-8">
+    <!-- ===================================================================== -->
+    <!-- STAGE 1: 5 CHARACTER SITUATIONS (SPEAKING & VISUAL OBSERVATION)       -->
+    <!-- ===================================================================== -->
+    <section id="stage-0" class="stage-panel hidden">
+      <div class="bg-mintsurf border border-sage-border rounded-2xl p-5 sm:p-6 mb-6">
+        <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+          <div>
+            <span class="inline-block text-xs font-semibold uppercase tracking-wider text-sage bg-white border border-sage-border px-2.5 py-1 rounded-full mb-2">
+              Part 1 • Speaking &amp; Observation
+            </span>
+            <h2 class="text-xl sm:text-2xl font-bold text-slateink">
+              Describe 5 People by Their Appearance, Likes &amp; Dislikes
+            </h2>
+            <p class="text-sm text-slateink-muted mt-1 max-w-2xl">
+              Look closely at each person’s outfit, expression, likes, and dislikes. Say out loud (or write in notes) what kind of person they are before revealing the suggested traits.
+            </p>
+            <p class="ua-hint text-xs sm:text-sm text-sage-dark mt-1.5 font-medium">
+              🇺🇦 Завдання: Подивіться на зовнішність, вподобання та антипатії кожного героя. Спершу опишіть людину вголос, а потім натисніть кнопку, щоб перевірити підказки та приклад опису.
+            </p>
+          </div>
+
+          <!-- Character Switcher Controls -->
+          <div class="flex items-center gap-2 shrink-0">
+            <button
+              type="button"
+              onclick="prevSituation()"
+              class="p-2.5 rounded-xl bg-white border border-sage-border hover:bg-sage-light text-slateink transition cursor-pointer"
+              aria-label="Previous character"
+              title="Previous character (←)"
+            >
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+              </svg>
+            </button>
+            <span id="situationCounter" class="text-xs font-semibold text-slateink-muted px-2">
+              1 / 5
+            </span>
+            <button
+              type="button"
+              onclick="nextSituation()"
+              class="p-2.5 rounded-xl bg-white border border-sage-border hover:bg-sage-light text-slateink transition cursor-pointer"
+              aria-label="Next character"
+              title="Next character (→)"
+            >
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Quick Character Selector Pills -->
+        <div id="situationPills" class="flex flex-wrap gap-2 mt-4 pt-4 border-t border-sage-border/70"></div>
+      </div>
+
+      <!-- Active Situation Card Container -->
+      <div id="situationCardContainer"></div>
+    </section>
+
+    <!-- ===================================================================== -->
+    <!-- STAGE 2: VOCABULARY REFERENCE & EXPLANATIONS                          -->
+    <!-- ===================================================================== -->
+    <section id="stage-1" class="stage-panel hidden">
+      <div class="bg-mintsurf border border-sage-border rounded-2xl p-5 sm:p-6 mb-6">
+        <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-4">
+          <div>
+            <span class="inline-block text-xs font-semibold uppercase tracking-wider text-sage bg-white border border-sage-border px-2.5 py-1 rounded-full mb-2">
+              Part 2 • Vocabulary Reference (A2+)
+            </span>
+            <h2 class="text-xl sm:text-2xl font-bold text-slateink">
+              Key Positive Personality Words &amp; Expressions
+            </h2>
+            <p class="text-sm text-slateink-muted mt-1">
+              Clear explanations and natural examples for describing good character and positive energy.
+            </p>
+            <p class="ua-hint text-xs sm:text-sm text-sage-dark mt-1.5 font-medium">
+              🇺🇦 Довідник слів і виразів рівня A2+: читайте визначення англійською, український переклад та приклади речень.
+            </p>
+          </div>
+
+          <!-- Search & Category Filter -->
+          <div class="flex flex-col sm:flex-row gap-2.5 w-full lg:w-auto">
+            <input
+              id="vocabSearchInput"
+              type="text"
+              oninput="renderVocabulary()"
+              placeholder="Search a word or meaning..."
+              class="px-3.5 py-2 rounded-xl bg-white border border-sage-border text-sm text-slateink placeholder:text-slateink-subtle focus:outline-none focus:ring-2 focus:ring-sage/40"
+            />
+            <div class="flex gap-1.5 bg-white p-1 rounded-xl border border-sage-border">
+              <button
+                type="button"
+                data-vocab-filter="all"
+                onclick="setVocabFilter('all')"
+                class="vocab-filter-btn px-3 py-1.5 rounded-lg text-xs font-medium transition cursor-pointer"
+              >
+                All
+              </button>
+              <button
+                type="button"
+                data-vocab-filter="words"
+                onclick="setVocabFilter('words')"
+                class="vocab-filter-btn px-3 py-1.5 rounded-lg text-xs font-medium transition cursor-pointer"
+              >
+                Single Words
+              </button>
+              <button
+                type="button"
+                data-vocab-filter="phrases"
+                onclick="setVocabFilter('phrases')"
+                class="vocab-filter-btn px-3 py-1.5 rounded-lg text-xs font-medium transition cursor-pointer"
+              >
+                Phrases
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Vocabulary Cards Grid -->
+      <div id="vocabGrid" class="grid grid-cols-1 md:grid-cols-2 gap-4"></div>
+    </section>
+
+    <!-- ===================================================================== -->
+    <!-- STAGE 3: EXERCISE 1 — POSITIVE TO NEGATIVE OPPOSITE MATCH            -->
+    <!-- ===================================================================== -->
+    <section id="stage-2" class="stage-panel hidden">
+      <div class="bg-mintsurf border border-sage-border rounded-2xl p-5 sm:p-6 mb-6">
+        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+          <div>
+            <span class="inline-block text-xs font-semibold uppercase tracking-wider text-sage bg-white border border-sage-border px-2.5 py-1 rounded-full mb-2">
+              Part 3 • Exercise 1
+            </span>
+            <h2 class="text-xl sm:text-2xl font-bold text-slateink">
+              Match Positive Traits with Their Negative Opposites
+            </h2>
+            <p class="text-sm text-slateink-muted mt-1">
+              Choose the negative opposite for each positive trait. You get instant feedback as you select.
+            </p>
+            <p class="ua-hint text-xs sm:text-sm text-sage-dark mt-1.5 font-medium">
+              🇺🇦 Вправа 1: Підберіть протилежну за значенням негативну рису характеру до кожного позитивного слова (наприклад: patient → impatient).
+            </p>
+          </div>
+
+          <!-- Score & Reset -->
+          <div class="flex items-center gap-3 shrink-0">
+            <div class="bg-white border border-sage-border rounded-xl px-3.5 py-2 text-center">
+              <div class="text-[11px] uppercase tracking-wider text-slateink-subtle font-semibold">Score</div>
+              <div id="oppScoreDisplay" class="text-base font-bold text-sage">0 / 10</div>
+            </div>
+            <button
+              type="button"
+              onclick="resetOppositesExercise()"
+              class="px-3.5 py-2.5 rounded-xl bg-white border border-sage-border hover:bg-sage-light text-xs font-semibold text-slateink transition cursor-pointer"
+            >
+              Reset
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Opposites List Container -->
+      <div id="oppositesContainer" class="space-y-3.5"></div>
+    </section>
+
+    <!-- ===================================================================== -->
+    <!-- STAGE 4: EXERCISE 2 — DEFINITION TO TRAIT QUIZ                        -->
+    <!-- ===================================================================== -->
+    <section id="stage-3" class="stage-panel hidden">
+      <div class="bg-mintsurf border border-sage-border rounded-2xl p-5 sm:p-6 mb-6">
+        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+          <div>
+            <span class="inline-block text-xs font-semibold uppercase tracking-wider text-sage bg-white border border-sage-border px-2.5 py-1 rounded-full mb-2">
+              Part 4 • Exercise 2
+            </span>
+            <h2 class="text-xl sm:text-2xl font-bold text-slateink">
+              Read the Character Description &amp; Choose the Trait
+            </h2>
+            <p class="text-sm text-slateink-muted mt-1">
+              Read each short description carefully and pick the positive personality word or phrase that matches it best.
+            </p>
+            <p class="ua-hint text-xs sm:text-sm text-sage-dark mt-1.5 font-medium">
+              🇺🇦 Вправа 2: Прочитайте короткий опис людини та оберіть правильне слово чи вираз (наприклад: «людина, яка завжди каже правду» → honest).
+            </p>
+          </div>
+
+          <!-- Quiz Score & Reset -->
+          <div class="flex items-center gap-3 shrink-0">
+            <div class="bg-white border border-sage-border rounded-xl px-3.5 py-2 text-center">
+              <div class="text-[11px] uppercase tracking-wider text-slateink-subtle font-semibold">Score</div>
+              <div id="defScoreDisplay" class="text-base font-bold text-sage">0 / 12</div>
+            </div>
+            <button
+              type="button"
+              onclick="resetDefinitionsExercise()"
+              class="px-3.5 py-2.5 rounded-xl bg-white border border-sage-border hover:bg-sage-light text-xs font-semibold text-slateink transition cursor-pointer"
+            >
+              Reset
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Definitions Quiz Container -->
+      <div id="definitionsContainer" class="grid grid-cols-1 md:grid-cols-2 gap-4"></div>
+    </section>
+  </main>
+
+  <!-- Bottom Stage Arrow Navigation Bar -->
+  <footer class="border-t border-sage-border bg-mintsurf-warm mt-auto">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between gap-4">
+      <button
+        id="prevStageBtn"
+        type="button"
+        onclick="prevStage()"
+        class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl border border-sage-border bg-white hover:bg-sage-light text-sm font-medium text-slateink transition cursor-pointer disabled:opacity-40 disabled:pointer-events-none"
+      >
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+        </svg>
+        <span>Previous Section</span>
+      </button>
+
+      <div class="text-xs text-slateink-muted hidden sm:block">
+        Tip: Use <kbd class="px-1.5 py-0.5 bg-white border border-sage-border rounded text-slateink font-mono">←</kbd> and <kbd class="px-1.5 py-0.5 bg-white border border-sage-border rounded text-slateink font-mono">→</kbd> keys to switch sections
+      </div>
+
+      <button
+        id="nextStageBtn"
+        type="button"
+        onclick="nextStage()"
+        class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-sage hover:bg-sage-dark text-sm font-medium text-white transition cursor-pointer disabled:opacity-40 disabled:pointer-events-none"
+      >
+        <span>Next Section</span>
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+        </svg>
+      </button>
+    </div>
+  </footer>
+
+  <script>
+    // =========================================================================
+    // DATA: 5 CHARACTER SITUATIONS WITH CUSTOM INLINE SVG ILLUSTRATIONS
+    // =========================================================================
+    const CHARACTER_SITUATIONS = [
+      {
+        id: 'maya',
+        name: 'Maya',
+        role: 'Community Garden & Bakery Volunteer',
+        appearance: 'Warm smile, curly dark hair tied back, soft sage cardigan, apron with flower & bread patches, holding a basket of fresh apples and muffins.',
+        appearanceUa: 'Привітна усмішка, кучеряве темне волосся, м’який шавлієвий кардиган, фартух із нашивками квітів і булочок, тримає кошик яблук і мафінів.',
+        likes: ['Baking warm treats for neighbors', 'Helping little kids learn gardening', 'Giving second chances after small mistakes'],
+        dislikes: ['People who stay angry or hold grudges', 'Rude comments', 'Wasting food'],
+        speakingPrompt: 'Look at Maya’s warm expression, homemade basket, and likes/dislikes. Which positive words describe her character?',
+        speakingPromptUa: 'Подивіться на теплий вираз обличчя Майї, кошик із частуваннями та її вподобання. Які позитивні слова описують її характер?',
+        suggestedTraits: ['sweet', 'kind-hearted', 'forgiving', 'generous', 'affectionate'],
+        modelDescription: 'Maya looks very sweet and kind-hearted because she smiles warmly and bakes treats for her neighbors. Since she loves sharing and hates holding grudges, she is also generous and forgiving.',
+        modelDescriptionUa: 'Майя виглядає дуже милою та добросердою, бо тепло усміхається і пече смаколики для сусідів. Оскільки вона любить ділитися і не тримає зла, вона щедра та здатна пробачати.',
+        svg: `
+          <svg viewBox="0 0 260 220" class="w-full max-w-[260px] h-auto mx-auto" role="img" aria-label="Illustration of Maya smiling with a basket of apples and muffins">
+            <rect x="12" y="12" width="236" height="196" rx="22" fill="#EBF3EE" stroke="#C8DDD2" stroke-width="2"/>
+            <circle cx="52" cy="48" r="14" fill="#FFFFFF" stroke="#5B8A72" stroke-width="1.5"/>
+            <path d="M52 54 C46 50, 44 45, 48 43 C50 42, 52 44, 52 45 C52 44, 54 42, 56 43 C60 45, 58 50, 52 54 Z" fill="#E06D75"/>
+            <circle cx="208" cy="48" r="14" fill="#FFFFFF" stroke="#5B8A72" stroke-width="1.5"/>
+            <path d="M203 52 L213 52 L212 45 L204 45 Z" fill="#D99B52"/>
+            <circle cx="208" cy="43" r="4" fill="#F2C68D"/>
+            <!-- Curly hair -->
+            <circle cx="104" cy="64" r="16" fill="#3B302A"/>
+            <circle cx="156" cy="64" r="16" fill="#3B302A"/>
+            <circle cx="116" cy="50" r="18" fill="#3B302A"/>
+            <circle cx="144" cy="50" r="18" fill="#3B302A"/>
+            <circle cx="130" cy="46" r="19" fill="#3B302A"/>
+            <!-- Face -->
+            <ellipse cx="130" cy="76" rx="23" ry="25" fill="#F7CEAE"/>
+            <!-- Eyes & Smile -->
+            <circle cx="121" cy="74" r="2.7" fill="#2B3632"/>
+            <circle cx="139" cy="74" r="2.7" fill="#2B3632"/>
+            <circle cx="115" cy="81" r="4" fill="#F2A39B" opacity="0.55"/>
+            <circle cx="145" cy="81" r="4" fill="#F2A39B" opacity="0.55"/>
+            <path d="M121 84 Q130 93 139 84" fill="none" stroke="#2B3632" stroke-width="2.5" stroke-linecap="round"/>
+            <!-- Cardigan & Apron -->
+            <path d="M92 142 C92 114, 108 103, 130 103 C152 103, 168 114, 168 142 L174 196 L86 196 Z" fill="#5B8A72"/>
+            <path d="M114 105 L130 135 L146 105" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linejoin="round"/>
+            <rect x="104" y="128" width="52" height="68" rx="8" fill="#FAFDFB" stroke="#C8DDD2" stroke-width="1.5"/>
+            <circle cx="118" cy="146" r="5" fill="#E06D75"/>
+            <circle cx="123" cy="142" r="4" fill="#88B59E"/>
+            <!-- Basket -->
+            <path d="M88 152 L172 152 L163 188 L97 188 Z" fill="#C98A4B" stroke="#8C5828" stroke-width="2"/>
+            <circle cx="112" cy="148" r="9" fill="#D94E4F"/>
+            <circle cx="132" cy="147" r="9" fill="#E8A84C"/>
+            <circle cx="150" cy="148" r="9" fill="#D94E4F"/>
+          </svg>
+        `
+      },
+      {
+        id: 'leo',
+        name: 'Leo',
+        role: 'Youth Mentor & Coding Tutor',
+        appearance: 'Neat glasses, energetic expression, bright mustard-and-sage jacket, notebook with star sketches, surrounded by upbeat music notes and lightbulb icons.',
+        appearanceUa: 'Акуратні окуляри, енергійний вираз обличчя, яскрава куртка, блокнот зі зірочками, поруч іконки музичних нот та ідеї.',
+        likes: ['Explaining tricky ideas step by step', 'Staying upbeat even on rainy Mondays', 'Encouraging shy students to try new projects'],
+        dislikes: ['Giving up too quickly', 'Boring lectures with zero energy', 'Negative attitudes'],
+        speakingPrompt: 'Leo helps learners understand hard things calmly and always brings energy to the room. What traits fit him?',
+        speakingPromptUa: 'Лео допомагає учням спокійно розібратися зі складними речами і завжди приносить енергію. Які риси йому підходять?',
+        suggestedTraits: ['patient', 'bright', 'inspiring', 'always in a good mood'],
+        modelDescription: 'Leo seems very patient because he explains difficult ideas step by step. He also looks bright and inspiring, and he is clearly always in a good mood.',
+        modelDescriptionUa: 'Лео виглядає дуже терплячим, адже пояснює складні речі крок за кроком. Він також справляє враження кмітливої та надихаючої людини, яка завжди в гарному настрої.',
+        svg: `
+          <svg viewBox="0 0 260 220" class="w-full max-w-[260px] h-auto mx-auto" role="img" aria-label="Illustration of Leo with glasses, notebook, and lightbulb">
+            <rect x="12" y="12" width="236" height="196" rx="22" fill="#EBF3EE" stroke="#C8DDD2" stroke-width="2"/>
+            <!-- Lightbulb & Music note -->
+            <circle cx="54" cy="52" r="15" fill="#FFF8DC" stroke="#E0A938" stroke-width="1.8"/>
+            <path d="M50 58 L58 58 M51 61 L57 61" stroke="#2B3632" stroke-width="2" stroke-linecap="round"/>
+            <circle cx="54" cy="48" r="5.5" fill="#F4C44E"/>
+            <path d="M204 56 L204 38 L215 35 L215 53" fill="none" stroke="#5B8A72" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="201" cy="56" r="3.5" fill="#5B8A72"/>
+            <circle cx="212" cy="53" r="3.5" fill="#5B8A72"/>
+            <!-- Hair -->
+            <path d="M104 68 C104 42, 156 42, 156 68 C156 58, 145 53, 130 53 C115 53, 104 58, 104 68 Z" fill="#4A3B31"/>
+            <!-- Face -->
+            <ellipse cx="130" cy="76" rx="22" ry="24" fill="#F3C5A2"/>
+            <!-- Glasses -->
+            <rect x="111" y="68" width="16" height="12" rx="4" fill="#FFFFFF" fill-opacity="0.45" stroke="#2B3632" stroke-width="2"/>
+            <rect x="133" y="68" width="16" height="12" rx="4" fill="#FFFFFF" fill-opacity="0.45" stroke="#2B3632" stroke-width="2"/>
+            <line x1="127" y1="74" x2="133" y2="74" stroke="#2B3632" stroke-width="2"/>
+            <circle cx="119" cy="74" r="2.2" fill="#2B3632"/>
+            <circle cx="141" cy="74" r="2.2" fill="#2B3632"/>
+            <path d="M121 85 Q130 93 139 85" fill="none" stroke="#2B3632" stroke-width="2.5" stroke-linecap="round"/>
+            <!-- Jacket -->
+            <path d="M90 144 C90 115, 108 104, 130 104 C152 104, 170 115, 170 144 L176 196 L84 196 Z" fill="#E3B341"/>
+            <path d="M130 104 L130 196" stroke="#2B3632" stroke-width="2"/>
+            <!-- Notebook -->
+            <rect x="102" y="138" width="56" height="44" rx="6" fill="#FFFFFF" stroke="#5B8A72" stroke-width="2"/>
+            <line x1="130" y1="138" x2="130" y2="182" stroke="#C8DDD2" stroke-width="2"/>
+            <circle cx="116" cy="158" r="5" fill="#88B59E"/>
+            <path d="M140 152 L149 152 M140 160 L151 160 M140 168 L147 168" stroke="#5A6962" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        `
+      },
+      {
+        id: 'tara',
+        name: 'Tara',
+        role: 'Mountain Rescue & Travel Journalist',
+        appearance: 'Confident posture, windbreaker jacket, compass & map badge, open travel book, warm eye contact, curious smile.',
+        appearanceUa: 'Впевнена постава, вітровка, значок компаса й карти, розгорнута книга про подорожі, відкритий погляд та допитлива усмішка.',
+        likes: ['Trying unfamiliar foods & cultures', 'Speaking up when something is unfair', 'Keeping promises even in tough weather'],
+        dislikes: ['Lying or hiding the truth', 'Closed-minded judgments', 'Running away from challenges'],
+        speakingPrompt: 'Tara loves new experiences, tells the truth directly, and takes on bold challenges. Which traits describe her?',
+        speakingPromptUa: 'Тара любить новий досвід, говорить правду прямо і береться за сміливі виклики. Які риси її характеризують?',
+        suggestedTraits: ['brave', 'open-minded', 'honest', 'reliable'],
+        modelDescription: 'Tara looks brave and open-minded because she enjoys new cultures and tough challenges. Because she hates lies and keeps her word, she is also honest and reliable.',
+        modelDescriptionUa: 'Тара виглядає сміливою та відкритою до нового, оскільки любить інші культури й складні виклики. Оскільки вона не терпить брехні і дотримується слова, вона чесна й надійна.',
+        svg: `
+          <svg viewBox="0 0 260 220" class="w-full max-w-[260px] h-auto mx-auto" role="img" aria-label="Illustration of Tara in a windbreaker with a compass and travel book">
+            <rect x="12" y="12" width="236" height="196" rx="22" fill="#EBF3EE" stroke="#C8DDD2" stroke-width="2"/>
+            <!-- Compass & Globe -->
+            <circle cx="54" cy="52" r="15" fill="#FFFFFF" stroke="#5B8A72" stroke-width="2"/>
+            <polygon points="54,41 57,52 54,63 51,52" fill="#5B8A72"/>
+            <circle cx="206" cy="52" r="15" fill="#FFFFFF" stroke="#5B8A72" stroke-width="2"/>
+            <ellipse cx="206" cy="52" rx="7" ry="14" fill="none" stroke="#88B59E" stroke-width="1.6"/>
+            <line x1="191" y1="52" x2="221" y2="52" stroke="#88B59E" stroke-width="1.6"/>
+            <!-- Ponytail & Hair -->
+            <path d="M150 56 C172 52, 180 72, 170 90" fill="none" stroke="#2B3632" stroke-width="8" stroke-linecap="round"/>
+            <path d="M105 70 C105 44, 155 44, 155 70 C155 60, 144 54, 130 54 C116 54, 105 60, 105 70 Z" fill="#2B3632"/>
+            <!-- Face -->
+            <ellipse cx="130" cy="76" rx="22" ry="24" fill="#EBB994"/>
+            <circle cx="121" cy="74" r="2.6" fill="#2B3632"/>
+            <circle cx="139" cy="74" r="2.6" fill="#2B3632"/>
+            <path d="M121 85 Q130 92 139 85" fill="none" stroke="#2B3632" stroke-width="2.5" stroke-linecap="round"/>
+            <!-- Windbreaker -->
+            <path d="M90 144 C90 115, 108 104, 130 104 C152 104, 170 115, 170 144 L176 196 L84 196 Z" fill="#4E7D66"/>
+            <path d="M112 106 L130 128 L148 106" fill="none" stroke="#EBF3EE" stroke-width="3.5" stroke-linejoin="round"/>
+            <!-- Open book -->
+            <path d="M96 154 L130 160 L164 154 L164 186 L130 190 L96 186 Z" fill="#FFFFFF" stroke="#2B3632" stroke-width="2"/>
+            <line x1="130" y1="160" x2="130" y2="190" stroke="#5B8A72" stroke-width="2"/>
+          </svg>
+        `
+      },
+      {
+        id: 'mateo',
+        name: 'Mateo',
+        role: 'Event Host, Musician & Friend',
+        appearance: 'Big joyful grin, acoustic guitar / party pennant badge, stylish casual shirt, arms open in a welcoming gesture.',
+        appearanceUa: 'Широка радісна усмішка, значок гітари та святкових прапорців, стильна повсякденна сорочка, відкритий привітний жест.',
+        likes: ['Bringing everyone together at gatherings', 'Cheering up quiet guests', 'Sharing snacks, stories, and laughs'],
+        dislikes: ['Awkward silence when someone feels left out', 'Being mean or unkind', 'Staying gloomy all evening'],
+        speakingPrompt: 'Mateo makes every party lively and cares warmly for his friends. Which words and phrases match him?',
+        speakingPromptUa: 'Матео робить кожну зустріч жвавою і тепло дбає про друзів. Які слова та вирази йому підходять?',
+        suggestedTraits: ['life and soul', 'affectionate', 'kind-hearted', 'always in a good mood'],
+        modelDescription: 'Mateo is the life and soul of the party because he makes everyone laugh and feel included. He is also affectionate, kind-hearted, and always in a good mood.',
+        modelDescriptionUa: 'Матео — душа компанії, бо розвеселяє всіх і допомагає кожному почуватися своїм. Він також теплий у вияві почуттів, добросердий і завжди в гарному настрої.',
+        svg: `
+          <svg viewBox="0 0 260 220" class="w-full max-w-[260px] h-auto mx-auto" role="img" aria-label="Illustration of Mateo smiling with party flags and star badge">
+            <rect x="12" y="12" width="236" height="196" rx="22" fill="#EBF3EE" stroke="#C8DDD2" stroke-width="2"/>
+            <!-- Party pennant string -->
+            <path d="M36 42 Q130 62 224 42" fill="none" stroke="#5B8A72" stroke-width="2"/>
+            <polygon points="62,48 74,50 68,62" fill="#E3B341"/>
+            <polygon points="94,53 106,54 100,66" fill="#E06D75"/>
+            <polygon points="160,53 172,51 166,64" fill="#5B8A72"/>
+            <polygon points="190,48 202,46 196,58" fill="#E3B341"/>
+            <!-- Hair -->
+            <path d="M104 72 C104 48, 156 48, 156 72 C156 62, 144 57, 130 57 C116 57, 104 62, 104 72 Z" fill="#2B3632"/>
+            <!-- Face -->
+            <ellipse cx="130" cy="79" rx="22" ry="24" fill="#E5B18A"/>
+            <circle cx="121" cy="77" r="2.7" fill="#2B3632"/>
+            <circle cx="139" cy="77" r="2.7" fill="#2B3632"/>
+            <path d="M119 86 Q130 97 141 86 Z" fill="#FFFFFF" stroke="#2B3632" stroke-width="2" stroke-linejoin="round"/>
+            <!-- Shirt & Heart/Star badge -->
+            <path d="M88 148 C88 118, 108 107, 130 107 C152 107, 172 118, 172 148 L178 196 L82 196 Z" fill="#FFFFFF" stroke="#5B8A72" stroke-width="2.2"/>
+            <path d="M130 107 L122 122 L130 132 L138 122 Z" fill="#88B59E"/>
+            <circle cx="146" cy="144" r="11" fill="#EBF3EE" stroke="#5B8A72" stroke-width="1.8"/>
+            <path d="M146 149 C142 146, 140 143, 143 141 C144.5 140, 146 142, 146 142 C146 142, 147.5 140, 149 141 C152 143, 150 146, 146 149 Z" fill="#E06D75"/>
+          </svg>
+        `
+      },
+      {
+        id: 'nora',
+        name: 'Nora',
+        role: 'Library Organizer & Mentor',
+        appearance: 'Calm gentle smile, soft bun hairstyle, cream knit sweater, holding a stack of books and a small potted plant, neat badge.',
+        appearanceUa: 'Спокійна лагідна усмішка, акуратний пучок, кремовий светр, тримає стопку книжок і маленький вазон із рослиною.',
+        likes: ['Helping classmates solve problems quickly', 'Listening patiently to others’ ideas', 'Being there on time whenever friends need help'],
+        dislikes: ['Selfishness', 'Broken promises', 'Loud arguments'],
+        speakingPrompt: 'Nora is calm, thoughtful, and always keeps her word. Which positive traits fit her best?',
+        speakingPromptUa: 'Нора спокійна, уважна та завжди тримає слово. Які позитивні риси їй підходять найкраще?',
+        suggestedTraits: ['reliable', 'patient', 'bright', 'sweet', 'generous'],
+        modelDescription: 'Nora looks sweet and patient because of her calm smile and gentle style. Since she helps others and never breaks a promise, she is generous and very reliable.',
+        modelDescriptionUa: 'Нора виглядає милою та терплячою завдяки спокійній усмішці. Оскільки вона допомагає іншим і ніколи не порушує обіцянок, вона щедра та дуже надійна.',
+        svg: `
+          <svg viewBox="0 0 260 220" class="w-full max-w-[260px] h-auto mx-auto" role="img" aria-label="Illustration of Nora holding books and a potted plant">
+            <rect x="12" y="12" width="236" height="196" rx="22" fill="#EBF3EE" stroke="#C8DDD2" stroke-width="2"/>
+            <!-- Small potted plant -->
+            <circle cx="56" cy="54" r="16" fill="#FFFFFF" stroke="#5B8A72" stroke-width="1.8"/>
+            <path d="M51 61 L61 61 L59 54 L53 54 Z" fill="#C98A4B"/>
+            <path d="M56 54 C50 47, 46 49, 50 53 M56 54 C62 47, 66 49, 62 53 M56 54 L56 44" stroke="#5B8A72" stroke-width="2.2" stroke-linecap="round"/>
+            <!-- Checkmark badge -->
+            <circle cx="204" cy="54" r="16" fill="#FFFFFF" stroke="#5B8A72" stroke-width="1.8"/>
+            <path d="M197 54 L202 59 L212 49" fill="none" stroke="#5B8A72" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+            <!-- Hair bun & head -->
+            <circle cx="130" cy="43" r="12" fill="#5C4738"/>
+            <path d="M105 70 C105 46, 155 46, 155 70 C155 60, 144 55, 130 55 C116 55, 105 60, 105 70 Z" fill="#5C4738"/>
+            <ellipse cx="130" cy="76" rx="22" ry="24" fill="#F6CCA9"/>
+            <circle cx="121" cy="74" r="2.5" fill="#2B3632"/>
+            <circle cx="139" cy="74" r="2.5" fill="#2B3632"/>
+            <path d="M122 85 Q130 91 138 85" fill="none" stroke="#2B3632" stroke-width="2.4" stroke-linecap="round"/>
+            <!-- Knit sweater -->
+            <path d="M90 144 C90 115, 108 104, 130 104 C152 104, 170 115, 170 144 L176 196 L84 196 Z" fill="#FAFDFB" stroke="#5B8A72" stroke-width="2.2"/>
+            <!-- Stack of books -->
+            <rect x="98" y="142" width="64" height="12" rx="3" fill="#88B59E" stroke="#2B3632" stroke-width="1.6"/>
+            <rect x="102" y="154" width="56" height="12" rx="3" fill="#E3B341" stroke="#2B3632" stroke-width="1.6"/>
+            <rect x="96" y="166" width="68" height="14" rx="3" fill="#5B8A72" stroke="#2B3632" stroke-width="1.6"/>
+          </svg>
+        `
+      }
+    ];
+
+    // =========================================================================
+    // DATA: VOCABULARY REFERENCE (WORDS & PHRASES)
+    // =========================================================================
+    const VOCABULARY_ITEMS = [
+      {
+        term: 'affectionate',
+        type: 'word',
+        pos: 'adjective',
+        definition: 'Showing warm feelings of love, care, and tenderness toward others.',
+        translation: 'ніжний, лагідний, теплий у вияві почуттів',
+        example: 'She gives her grandparents an affectionate hug every Sunday.'
+      },
+      {
+        term: 'brave',
+        type: 'word',
+        pos: 'adjective',
+        definition: 'Ready to face danger, fear, or difficult situations without running away.',
+        translation: 'сміливий, хоробрий',
+        example: 'It was brave of him to speak up in front of the whole class.'
+      },
+      {
+        term: 'open-minded',
+        type: 'word',
+        pos: 'adjective',
+        definition: 'Willing to listen to new ideas, different opinions, and unfamiliar cultures.',
+        translation: 'відкритий до нового, неупереджений',
+        example: 'An open-minded person enjoys learning from people with different views.'
+      },
+      {
+        term: 'reliable',
+        type: 'word',
+        pos: 'adjective',
+        definition: 'Someone you can trust because they do what they promise and arrive on time.',
+        translation: 'надійний, такий, на кого можна покластися',
+        example: 'Daniel is very reliable—if he says he will help, he always does.'
+      },
+      {
+        term: 'inspiring',
+        type: 'word',
+        pos: 'adjective',
+        definition: 'Making other people feel motivated, confident, and excited to do good things.',
+        translation: 'надихаючий',
+        example: 'Our art teacher’s stories about young creators are really inspiring.'
+      },
+      {
+        term: 'generous',
+        type: 'word',
+        pos: 'adjective',
+        definition: 'Happy to share time, money, help, or things with others.',
+        translation: 'щедрий',
+        example: 'He is generous with his time and helps neighbors carry groceries.'
+      },
+      {
+        term: 'kind-hearted',
+        type: 'word',
+        pos: 'adjective',
+        definition: 'Having a gentle, caring heart and wanting other people to feel happy and safe.',
+        translation: 'добросердий, добрий душею',
+        example: 'Our kind-hearted friend adopted two older cats from the shelter.'
+      },
+      {
+        term: 'forgiving',
+        type: 'word',
+        pos: 'adjective',
+        definition: 'Ready to forgive someone’s mistake and move on without staying angry.',
+        translation: 'здатний пробачати, незлопам’ятний',
+        example: 'She is very forgiving and doesn’t stay mad when a friend is late.'
+      },
+      {
+        term: 'sweet',
+        type: 'word',
+        pos: 'adjective',
+        definition: 'Kind, gentle, and pleasant in a natural, friendly way.',
+        translation: 'милий, приємний, лагідний',
+        example: 'That was such a sweet message to send on my birthday!'
+      },
+      {
+        term: 'patient',
+        type: 'word',
+        pos: 'adjective',
+        definition: 'Able to wait calmly or explain things again without getting annoyed.',
+        translation: 'терплячий',
+        example: 'A good language tutor needs to be patient when students make mistakes.'
+      },
+      {
+        term: 'honest',
+        type: 'word',
+        pos: 'adjective',
+        definition: 'Always telling the truth and not cheating or lying.',
+        translation: 'чесний, правдивий',
+        example: 'I appreciate how honest she is—you always know where you stand.'
+      },
+      {
+        term: 'bright',
+        type: 'word',
+        pos: 'adjective',
+        definition: 'Clever, quick to understand or learn new things, and full of life.',
+        translation: 'кмітливий, тямущий, життєрадісний',
+        example: 'Lina is a bright student who picks up new grammar rules fast.'
+      },
+      {
+        term: 'life and soul',
+        type: 'phrase',
+        pos: 'idiom / noun phrase',
+        definition: 'The most energetic, funny, and lively person at a party or group gathering.',
+        translation: 'душа компанії',
+        example: 'Tom is always the life and soul of the party with his jokes and music.'
+      },
+      {
+        term: 'always in a good mood',
+        type: 'phrase',
+        pos: 'phrase',
+        definition: 'Cheerful, positive, and pleasant almost every day.',
+        translation: 'завжди в гарному настрої',
+        example: 'Even on busy mornings, Sofia is always in a good mood.'
+      },
+      {
+        term: 'helpful',
+        type: 'word',
+        pos: 'adjective',
+        definition: 'Ready to give practical help or support whenever someone needs it.',
+        translation: 'чуйний, готовий допомогти',
+        example: 'The hotel staff was super helpful when we missed our train.'
+      }
+    ];
+
+    // =========================================================================
+    // DATA: EXERCISE 1 — POSITIVE TO NEGATIVE OPPOSITES
+    // =========================================================================
+    const OPPOSITES_ITEMS = [
+      {
+        id: 'opp-1',
+        positive: 'patient',
+        positiveUa: 'терплячий',
+        options: ['impatient', 'dishonest', 'selfish'],
+        correct: 'impatient',
+        noteUa: 'patient → impatient (нетерплячий)'
+      },
+      {
+        id: 'opp-2',
+        positive: 'honest',
+        positiveUa: 'чесний',
+        options: ['unreliable', 'dishonest', 'cowardly'],
+        correct: 'dishonest',
+        noteUa: 'honest → dishonest (нечесний)'
+      },
+      {
+        id: 'opp-3',
+        positive: 'generous',
+        positiveUa: 'щедрий',
+        options: ['selfish / stingy', 'narrow-minded', 'impatient'],
+        correct: 'selfish / stingy',
+        noteUa: 'generous → selfish / stingy (егоїстичний / скупий)'
+      },
+      {
+        id: 'opp-4',
+        positive: 'kind-hearted',
+        positiveUa: 'добросердий',
+        options: ['dishonest', 'cruel / unkind', 'unreliable'],
+        correct: 'cruel / unkind',
+        noteUa: 'kind-hearted → cruel / unkind (жорстокий / недобрий)'
+      },
+      {
+        id: 'opp-5',
+        positive: 'forgiving',
+        positiveUa: 'здатний пробачати',
+        options: ['vengeful / grudging', 'cowardly', 'stingy'],
+        correct: 'vengeful / grudging',
+        noteUa: 'forgiving → vengeful / grudging (мстивий / злопам’ятний)'
+      },
+      {
+        id: 'opp-6',
+        positive: 'reliable',
+        positiveUa: 'надійний',
+        options: ['unreliable', 'selfish', 'cruel'],
+        correct: 'unreliable',
+        noteUa: 'reliable → unreliable (ненадійний)'
+      },
+      {
+        id: 'opp-7',
+        positive: 'open-minded',
+        positiveUa: 'відкритий до нового',
+        options: ['impatient', 'narrow-minded', 'dishonest'],
+        correct: 'narrow-minded',
+        noteUa: 'open-minded → narrow-minded (вузьколобий / обмежений у поглядах)'
+      },
+      {
+        id: 'opp-8',
+        positive: 'brave',
+        positiveUa: 'сміливий',
+        options: ['cowardly', 'stingy', 'unreliable'],
+        correct: 'cowardly',
+        noteUa: 'brave → cowardly (боягузливий)'
+      },
+      {
+        id: 'opp-9',
+        positive: 'always in a good mood',
+        positiveUa: 'завжди в гарному настрої',
+        options: ['always grumpy / moody', 'selfish', 'cowardly'],
+        correct: 'always grumpy / moody',
+        noteUa: 'always in a good mood → always grumpy / moody (завжди буркотливий / похмурий)'
+      },
+      {
+        id: 'opp-10',
+        positive: 'bright',
+        positiveUa: 'кмітливий',
+        options: ['dull / slow', 'forgiving', 'affectionate'],
+        correct: 'dull / slow',
+        noteUa: 'bright → dull / slow (некмітливий / повільний у засвоєнні)'
+      }
+    ];
+
+    // =========================================================================
+    // DATA: EXERCISE 2 — DEFINITION TO TRAIT QUIZ
+    // =========================================================================
+    const DEFINITIONS_ITEMS = [
+      {
+        id: 'def-1',
+        description: 'It’s a person who always tells the truth and never lies.',
+        descriptionUa: 'Людина, яка завжди каже правду і ніколи не бреше.',
+        options: ['honest', 'brave', 'generous', 'sweet'],
+        answer: 'honest',
+        explanation: 'An honest person tells the truth openly and fairly.'
+      },
+      {
+        id: 'def-2',
+        description: 'Clever and learning new things fast.',
+        descriptionUa: 'Кмітливий і швидко вчиться новому.',
+        options: ['patient', 'bright', 'forgiving', 'affectionate'],
+        answer: 'bright',
+        explanation: 'Bright means smart, quick to learn, and sharp-minded.'
+      },
+      {
+        id: 'def-3',
+        description: 'Someone who can wait calmly and explain things again without getting angry.',
+        descriptionUa: 'Той, хто вміє спокійно чекати і пояснювати знову без роздратування.',
+        options: ['patient', 'life and soul', 'brave', 'open-minded'],
+        answer: 'patient',
+        explanation: 'Patient people stay calm when waiting or teaching.'
+      },
+      {
+        id: 'def-4',
+        description: 'Happy to share time, money, or things with other people.',
+        descriptionUa: 'Радий ділитися часом, грошима або речами з іншими.',
+        options: ['reliable', 'generous', 'sweet', 'honest'],
+        answer: 'generous',
+        explanation: 'Generous people like giving and sharing with others.'
+      },
+      {
+        id: 'def-5',
+        description: 'Ready to forgive someone’s mistake and not stay angry for a long time.',
+        descriptionUa: 'Готовий пробачити помилку і не тримати довго зла.',
+        options: ['forgiving', 'bright', 'reliable', 'inspiring'],
+        answer: 'forgiving',
+        explanation: 'A forgiving person lets go of anger and accepts apologies.'
+      },
+      {
+        id: 'def-6',
+        description: 'The most energetic, fun, and lively person at a party or gathering.',
+        descriptionUa: 'Найбільш енергійна, весела та жвава людина на вечірці чи зустрічі.',
+        options: ['kind-hearted', 'life and soul', 'patient', 'honest'],
+        answer: 'life and soul',
+        explanation: '“Life and soul (of the party)” describes someone who brings energy and fun to a group.'
+      },
+      {
+        id: 'def-7',
+        description: 'Someone you can trust to keep promises and do what they say.',
+        descriptionUa: 'Людина, якій можна довіряти — вона тримає обіцянки і робить те, що сказала.',
+        options: ['reliable', 'sweet', 'affectionate', 'life and soul'],
+        answer: 'reliable',
+        explanation: 'Reliable people are dependable and keep their word.'
+      },
+      {
+        id: 'def-8',
+        description: 'Willing to listen to new ideas and respect different opinions or cultures.',
+        descriptionUa: 'Готовий слухати нові ідеї та поважати інші погляди чи культури.',
+        options: ['open-minded', 'generous', 'forgiving', 'patient'],
+        answer: 'open-minded',
+        explanation: 'Open-minded people welcome fresh ideas and different perspectives.'
+      },
+      {
+        id: 'def-9',
+        description: 'Not afraid to face difficult situations or speak up when needed.',
+        descriptionUa: 'Не боїться складних ситуацій або висловитися, коли це потрібно.',
+        options: ['sweet', 'brave', 'always in a good mood', 'kind-hearted'],
+        answer: 'brave',
+        explanation: 'Brave means showing courage even when something feels scary or hard.'
+      },
+      {
+        id: 'def-10',
+        description: 'Showing warm love, hugs, or care toward family and friends.',
+        descriptionUa: 'Виявляє теплу любов, обійми або турботу до рідних і друзів.',
+        options: ['affectionate', 'bright', 'reliable', 'forgiving'],
+        answer: 'affectionate',
+        explanation: 'Affectionate people openly show warmth and care.'
+      },
+      {
+        id: 'def-11',
+        description: 'Having a gentle, caring heart and wanting others to feel kind and happy.',
+        descriptionUa: 'Має лагідне, турботливе серце і хоче добра іншим.',
+        options: ['kind-hearted', 'life and soul', 'open-minded', 'bright'],
+        answer: 'kind-hearted',
+        explanation: 'Kind-hearted people are gentle, caring, and thoughtful.'
+      },
+      {
+        id: 'def-12',
+        description: 'Cheerful and positive most of the time, even on ordinary days.',
+        descriptionUa: 'Життєрадісний і позитивний більшу частину часу, навіть у звичайні дні.',
+        options: ['honest', 'always in a good mood', 'brave', 'generous'],
+        answer: 'always in a good mood',
+        explanation: 'Someone who is always in a good mood brings a cheerful attitude.'
+      }
+    ];
+
+    // =========================================================================
+    // APPLICATION STATE
+    // =========================================================================
+    const state = {
+      currentStage: 0,
+      showUaHints: true,
+      currentSituationIndex: 0,
+      revealedSituations: {},
+      vocabFilter: 'all',
+      oppAnswers: {},
+      defAnswers: {}
+    };
+
+    // =========================================================================
+    // STAGE NAVIGATION
+    // =========================================================================
+    function goToStage(stageIndex) {
+      if (stageIndex < 0 || stageIndex > 3) return;
+      state.currentStage = stageIndex;
+
+      document.querySelectorAll('.stage-panel').forEach((panel, idx) => {
+        panel.classList.toggle('hidden', idx !== stageIndex);
+      });
+
+      document.querySelectorAll('.stage-tab').forEach((tab, idx) => {
+        const badge = tab.querySelector('span:first-child');
+        if (idx === stageIndex) {
+          tab.className = 'stage-tab px-3 py-2 rounded-xl text-xs sm:text-sm font-semibold whitespace-nowrap transition cursor-pointer flex items-center gap-1.5 bg-sage text-white shadow-xs';
+          badge.className = 'w-5 h-5 rounded-full text-xs flex items-center justify-center font-bold bg-white text-sage';
+        } else {
+          tab.className = 'stage-tab px-3 py-2 rounded-xl text-xs sm:text-sm font-medium whitespace-nowrap transition cursor-pointer flex items-center gap-1.5 bg-mintsurf hover:bg-sage-light text-slateink border border-sage-border/60';
+          badge.className = 'w-5 h-5 rounded-full text-xs flex items-center justify-center font-semibold bg-white text-slateink-muted border border-sage-border';
+        }
+      });
+
+      const prevBtn = document.getElementById('prevStageBtn');
+      const nextBtn = document.getElementById('nextStageBtn');
+      prevBtn.disabled = stageIndex === 0;
+      nextBtn.disabled = stageIndex === 3;
+
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function nextStage() {
+      if (state.currentStage < 3) goToStage(state.currentStage + 1);
+    }
+
+    function prevStage() {
+      if (state.currentStage > 0) goToStage(state.currentStage - 1);
+    }
+
+    // =========================================================================
+    // UKRAINIAN HINTS TOGGLE
+    // =========================================================================
+    function toggleUkrainianHints() {
+      state.showUaHints = !state.showUaHints;
+      applyUkrainianVisibility();
+    }
+
+    function applyUkrainianVisibility() {
+      const dot = document.getElementById('uaIndicatorDot');
+      const label = document.getElementById('uaToggleLabel');
+      if (state.showUaHints) {
+        dot.className = 'w-2 h-2 rounded-full bg-sage';
+        label.textContent = 'UA Hints: ON';
+      } else {
+        dot.className = 'w-2 h-2 rounded-full bg-slateink-subtle';
+        label.textContent = 'UA Hints: OFF';
+      }
+
+      document.querySelectorAll('.ua-hint').forEach((el) => {
+        el.classList.toggle('hidden', !state.showUaHints);
+      });
+    }
+
+    // =========================================================================
+    // PART 1: 5 CHARACTER SITUATIONS RENDERING & INTERACTION
+    // =========================================================================
+    function renderSituationsUI() {
+      const idx = state.currentSituationIndex;
+      const person = CHARACTER_SITUATIONS[idx];
+      const isRevealed = Boolean(state.revealedSituations[person.id]);
+
+      document.getElementById('situationCounter').textContent = `${idx + 1} / ${CHARACTER_SITUATIONS.length}`;
+
+      // Render character selector pills
+      const pillsContainer = document.getElementById('situationPills');
+      pillsContainer.innerHTML = CHARACTER_SITUATIONS.map((item, i) => {
+        const active = i === idx;
+        return `
+          <button
+            type="button"
+            onclick="selectSituation(${i})"
+            class="px-3 py-1.5 rounded-xl text-xs font-semibold transition cursor-pointer flex items-center gap-1.5 ${
+              active
+                ? 'bg-sage text-white'
+                : 'bg-white text-slateink border border-sage-border hover:bg-sage-light'
+            }"
+          >
+            <span>${i + 1}. ${item.name}</span>
+            ${state.revealedSituations[item.id] ? '<span class="text-[10px] opacity-85">✓</span>' : ''}
+          </button>
+        `;
+      }).join('');
+
+      // Render active situation card
+      const container = document.getElementById('situationCardContainer');
+      container.innerHTML = `
+        <article class="bg-white border border-sage-border rounded-2xl p-5 sm:p-7 shadow-xs">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+            <!-- Left Column: Illustration & Likes/Dislikes -->
+            <div class="lg:col-span-5 space-y-4">
+              <div class="bg-mintsurf-warm border border-sage-border rounded-2xl p-4 flex flex-col items-center">
+                ${person.svg}
+                <div class="mt-3 text-center">
+                  <h3 class="text-lg font-bold text-slateink">${person.name}</h3>
+                  <p class="text-xs font-medium text-sage">${person.role}</p>
+                </div>
+              </div>
+
+              <!-- Likes & Dislikes Box -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-3">
+                <div class="bg-sage-light/70 border border-sage-border rounded-xl p-3.5">
+                  <div class="text-xs font-bold uppercase tracking-wider text-sage-dark mb-1.5 flex items-center gap-1.5">
+                    <span>♥</span>
+                    <span>Likes &amp; Habits</span>
+                  </div>
+                  <ul class="space-y-1 text-xs sm:text-sm text-slateink">
+                    ${person.likes.map((like) => `<li class="flex items-start gap-2"><span class="text-sage font-bold">•</span><span>${like}</span></li>`).join('')}
+                  </ul>
+                </div>
+
+                <div class="bg-mintsurf-warm border border-sage-border rounded-xl p-3.5">
+                  <div class="text-xs font-bold uppercase tracking-wider text-slateink-muted mb-1.5 flex items-center gap-1.5">
+                    <span>✕</span>
+                    <span>Dislikes</span>
+                  </div>
+                  <ul class="space-y-1 text-xs sm:text-sm text-slateink-muted">
+                    ${person.dislikes.map((dislike) => `<li class="flex items-start gap-2"><span class="text-slateink-subtle font-bold">•</span><span>${dislike}</span></li>`).join('')}
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Column: Appearance, Speaking Prompt & Reveal Box -->
+            <div class="lg:col-span-7 flex flex-col justify-between space-y-5">
+              <div class="space-y-4">
+                <div>
+                  <h4 class="text-xs font-bold uppercase tracking-wider text-slateink-subtle mb-1">
+                    Appearance &amp; Visual Clues
+                  </h4>
+                  <p class="text-sm sm:text-base text-slateink leading-relaxed">
+                    ${person.appearance}
+                  </p>
+                  <p class="ua-hint text-xs sm:text-sm text-sage-dark mt-1">
+                    🇺🇦 ${person.appearanceUa}
+                  </p>
+                </div>
+
+                <div class="bg-mintsurf border border-sage-border rounded-2xl p-4">
+                  <div class="text-xs font-bold uppercase tracking-wider text-sage mb-1">
+                    Your Turn to Speak
+                  </div>
+                  <p class="text-sm sm:text-base font-medium text-slateink">
+                    ${person.speakingPrompt}
+                  </p>
+                  <p class="ua-hint text-xs sm:text-sm text-sage-dark mt-1">
+                    🇺🇦 ${person.speakingPromptUa}
+                  </p>
+                </div>
+
+                <!-- Reveal Button -->
+                <div>
+                  <button
+                    type="button"
+                    onclick="toggleRevealSituation('${person.id}')"
+                    class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl font-semibold text-sm transition cursor-pointer ${
+                      isRevealed
+                        ? 'bg-sage-light text-sage-dark border border-sage-border hover:bg-sage/15'
+                        : 'bg-sage hover:bg-sage-dark text-white'
+                    }"
+                  >
+                    <span>${isRevealed ? 'Hide Suggested Traits & Model Answer' : 'Reveal Suggested Traits & Model Description'}</span>
+                  </button>
+                </div>
+
+                <!-- Revealed Content -->
+                ${
+                  isRevealed
+                    ? `
+                  <div class="bg-sage-light/60 border border-sage-border rounded-2xl p-4 sm:p-5 space-y-3 stage-panel">
+                    <div>
+                      <div class="text-xs font-bold uppercase tracking-wider text-sage-dark mb-2">
+                        Suggested Positive Traits
+                      </div>
+                      <div class="flex flex-wrap gap-2">
+                        ${person.suggestedTraits
+                          .map(
+                            (trait) => `<span class="px-3 py-1 rounded-full text-xs sm:text-sm font-semibold bg-white text-sage-dark border border-sage-border">${trait}</span>`
+                          )
+                          .join('')}
+                      </div>
+                    </div>
+
+                    <div class="pt-2 border-t border-sage-border/70">
+                      <div class="text-xs font-bold uppercase tracking-wider text-sage-dark mb-1">
+                        Model Character Description
+                      </div>
+                      <p class="text-sm text-slateink leading-relaxed">
+                        “${person.modelDescription}”
+                      </p>
+                      <p class="ua-hint text-xs sm:text-sm text-sage-dark mt-1.5">
+                        🇺🇦 «${person.modelDescriptionUa}»
+                      </p>
+                    </div>
+                  </div>
+                `
+                    : ''
+                }
+              </div>
+
+              <!-- Bottom Stepper inside Situations -->
+              <div class="pt-4 border-t border-sage-border/70 flex items-center justify-between">
+                <button
+                  type="button"
+                  onclick="prevSituation()"
+                  class="px-3.5 py-2 rounded-xl text-xs font-semibold border border-sage-border bg-white hover:bg-sage-light text-slateink transition cursor-pointer"
+                >
+                  ← Previous Person
+                </button>
+                <button
+                  type="button"
+                  onclick="nextSituation()"
+                  class="px-3.5 py-2 rounded-xl text-xs font-semibold border border-sage-border bg-mintsurf hover:bg-sage-light text-slateink transition cursor-pointer"
+                >
+                  Next Person →
+                </button>
+              </div>
+            </div>
+          </div>
+        </article>
+      `;
+
+      applyUkrainianVisibility();
+    }
+
+    function selectSituation(index) {
+      state.currentSituationIndex = index;
+      renderSituationsUI();
+    }
+
+    function nextSituation() {
+      state.currentSituationIndex = (state.currentSituationIndex + 1) % CHARACTER_SITUATIONS.length;
+      renderSituationsUI();
+    }
+
+    function prevSituation() {
+      state.currentSituationIndex =
+        (state.currentSituationIndex - 1 + CHARACTER_SITUATIONS.length) % CHARACTER_SITUATIONS.length;
+      renderSituationsUI();
+    }
+
+    function toggleRevealSituation(id) {
+      state.revealedSituations[id] = !state.revealedSituations[id];
+      renderSituationsUI();
+    }
+
+    // =========================================================================
+    // PART 2: VOCABULARY REFERENCE RENDERING & FILTERING
+    // =========================================================================
+    function setVocabFilter(filter) {
+      state.vocabFilter = filter;
+      renderVocabulary();
+    }
+
+    function renderVocabulary() {
+      const searchTerm = (document.getElementById('vocabSearchInput')?.value || '').trim().toLowerCase();
+
+      document.querySelectorAll('.vocab-filter-btn').forEach((btn) => {
+        const isActive = btn.getAttribute('data-vocab-filter') === state.vocabFilter;
+        btn.className = `vocab-filter-btn px-3 py-1.5 rounded-lg text-xs font-medium transition cursor-pointer ${
+          isActive ? 'bg-sage text-white' : 'text-slateink-muted hover:bg-sage-light'
+        }`;
+      });
+
+      const filtered = VOCABULARY_ITEMS.filter((item) => {
+        const matchesType =
+          state.vocabFilter === 'all' ||
+          (state.vocabFilter === 'words' && item.type === 'word') ||
+          (state.vocabFilter === 'phrases' && item.type === 'phrase');
+
+        const matchesSearch =
+          !searchTerm ||
+          item.term.toLowerCase().includes(searchTerm) ||
+          item.definition.toLowerCase().includes(searchTerm) ||
+          item.translation.toLowerCase().includes(searchTerm) ||
+          item.example.toLowerCase().includes(searchTerm);
+
+        return matchesType && matchesSearch;
+      });
+
+      const grid = document.getElementById('vocabGrid');
+      if (filtered.length === 0) {
+        grid.innerHTML = `
+          <div class="col-span-full bg-mintsurf border border-sage-border rounded-2xl p-8 text-center">
+            <p class="text-sm font-medium text-slateink-muted">No matching vocabulary items found.</p>
+          </div>
+        `;
+        return;
+      }
+
+      grid.innerHTML = filtered
+        .map(
+          (item) => `
+          <article class="bg-white border border-sage-border rounded-2xl p-5 hover:border-sage transition flex flex-col justify-between">
+            <div>
+              <div class="flex items-start justify-between gap-2 mb-2">
+                <h3 class="text-lg font-bold text-slateink">${item.term}</h3>
+                <span class="text-[11px] font-semibold px-2.5 py-0.5 rounded-full bg-sage-light text-sage-dark border border-sage-border shrink-0">
+                  ${item.pos}
+                </span>
+              </div>
+
+              <p class="ua-hint text-xs sm:text-sm font-semibold text-sage-dark mb-2">
+                🇺🇦 ${item.translation}
+              </p>
+
+              <p class="text-sm text-slateink leading-relaxed">
+                ${item.definition}
+              </p>
+            </div>
+
+            <div class="mt-4 pt-3 border-t border-sage-border/70">
+              <p class="text-xs sm:text-sm text-slateink-muted italic">
+                “${item.example}”
+              </p>
+            </div>
+          </article>
+        `
+        )
+        .join('');
+
+      applyUkrainianVisibility();
+    }
+
+    // =========================================================================
+    // PART 3: EXERCISE 1 — POSITIVE TO NEGATIVE OPPOSITES
+    // =========================================================================
+    function renderOppositesExercise() {
+      const container = document.getElementById('oppositesContainer');
+      let correctCount = 0;
+
+      container.innerHTML = OPPOSITES_ITEMS.map((item, index) => {
+        const chosen = state.oppAnswers[item.id];
+        const isCorrect = chosen === item.correct;
+        if (isCorrect) correctCount++;
+
+        return `
+          <div class="bg-white border border-sage-border rounded-2xl p-4 sm:p-5">
+            <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+              <div>
+                <div class="flex items-center gap-2 flex-wrap">
+                  <span class="text-xs font-bold text-slateink-subtle">${index + 1}.</span>
+                  <span class="text-base sm:text-lg font-bold text-slateink">${item.positive}</span>
+                  <span class="ua-hint text-xs sm:text-sm text-sage-dark font-medium">(${item.positiveUa})</span>
+                </div>
+                <p class="text-xs text-slateink-muted mt-0.5">Select the negative opposite:</p>
+              </div>
+
+              <div class="flex flex-wrap gap-2">
+                ${item.options
+                  .map((opt) => {
+                    let btnStyle =
+                      'bg-mintsurf-warm hover:bg-sage-light text-slateink border-sage-border';
+                    if (chosen === opt) {
+                      if (opt === item.correct) {
+                        btnStyle = 'bg-sage text-white border-sage';
+                      } else {
+                        btnStyle = 'bg-rose-50 text-rose-800 border-rose-300';
+                      }
+                    }
+                    return `
+                      <button
+                        type="button"
+                        onclick="selectOpposite('${item.id}', '${opt.replace(/'/g, "\\'")}')"
+                        class="px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold border transition cursor-pointer ${btnStyle}"
+                      >
+                        ${opt}
+                      </button>
+                    `;
+                  })
+                  .join('')}
+              </div>
+            </div>
+
+            ${
+              chosen
+                ? `
+              <div class="mt-3 pt-2.5 border-t border-sage-border/60 text-xs sm:text-sm flex items-center justify-between gap-2 flex-wrap">
+                ${
+                  isCorrect
+                    ? `<span class="text-sage-dark font-semibold">✓ Correct! Negative opposite: <strong>${item.correct}</strong></span>`
+                    : `<span class="text-rose-700 font-medium">Not quite — try again! Hint: look for the opposite of “${item.positive}”.</span>`
+                }
+                <span class="ua-hint text-sage-dark font-medium">🇺🇦 ${item.noteUa}</span>
+              </div>
+            `
+                : ''
+            }
+          </div>
+        `;
+      }).join('');
+
+      document.getElementById('oppScoreDisplay').textContent = `${correctCount} / ${OPPOSITES_ITEMS.length}`;
+      applyUkrainianVisibility();
+    }
+
+    function selectOpposite(itemId, option) {
+      state.oppAnswers[itemId] = option;
+      renderOppositesExercise();
+    }
+
+    function resetOppositesExercise() {
+      state.oppAnswers = {};
+      renderOppositesExercise();
+    }
+
+    // =========================================================================
+    // PART 4: EXERCISE 2 — DEFINITION TO TRAIT QUIZ
+    // =========================================================================
+    function renderDefinitionsExercise() {
+      const container = document.getElementById('definitionsContainer');
+      let correctCount = 0;
+
+      container.innerHTML = DEFINITIONS_ITEMS.map((item, idx) => {
+        const chosen = state.defAnswers[item.id];
+        const isCorrect = chosen === item.answer;
+        if (isCorrect) correctCount++;
+
+        return `
+          <article class="bg-white border border-sage-border rounded-2xl p-5 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-2">
+                <span class="text-xs font-bold uppercase tracking-wider text-sage">Description ${idx + 1}</span>
+                ${
+                  chosen
+                    ? isCorrect
+                      ? '<span class="text-xs font-bold text-sage-dark bg-sage-light px-2.5 py-0.5 rounded-full">✓ Correct</span>'
+                      : '<span class="text-xs font-bold text-rose-700 bg-rose-50 px-2.5 py-0.5 rounded-full">Try again</span>'
+                    : ''
+                }
+              </div>
+
+              <p class="text-sm sm:text-base font-semibold text-slateink leading-snug">
+                “${item.description}”
+              </p>
+              <p class="ua-hint text-xs sm:text-sm text-sage-dark mt-1">
+                🇺🇦 ${item.descriptionUa}
+              </p>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 mt-4">
+                ${item.options
+                  .map((opt) => {
+                    let style = 'bg-mintsurf-warm hover:bg-sage-light text-slateink border-sage-border';
+                    if (chosen === opt) {
+                      style =
+                        opt === item.answer
+                          ? 'bg-sage text-white border-sage'
+                          : 'bg-rose-50 text-rose-800 border-rose-300';
+                    }
+                    return `
+                      <button
+                        type="button"
+                        onclick="selectDefinitionOption('${item.id}', '${opt.replace(/'/g, "\\'")}')"
+                        class="px-3 py-2 rounded-xl text-xs sm:text-sm font-semibold border text-left transition cursor-pointer ${style}"
+                      >
+                        ${opt}
+                      </button>
+                    `;
+                  })
+                  .join('')}
+              </div>
+            </div>
+
+            ${
+              chosen
+                ? `
+              <div class="mt-3.5 pt-3 border-t border-sage-border/70 text-xs text-slateink-muted">
+                ${
+                  isCorrect
+                    ? `<span class="text-sage-dark font-medium">${item.explanation}</span>`
+                    : `<span>Hint: The correct answer is <strong>${item.answer}</strong>. ${item.explanation}</span>`
+                }
+              </div>
+            `
+                : ''
+            }
+          </article>
+        `;
+      }).join('');
+
+      document.getElementById('defScoreDisplay').textContent = `${correctCount} / ${DEFINITIONS_ITEMS.length}`;
+      applyUkrainianVisibility();
+    }
+
+    function selectDefinitionOption(itemId, option) {
+      state.defAnswers[itemId] = option;
+      renderDefinitionsExercise();
+    }
+
+    function resetDefinitionsExercise() {
+      state.defAnswers = {};
+      renderDefinitionsExercise();
+    }
+
+    // =========================================================================
+    // KEYBOARD ARROW NAVIGATION BETWEEN STAGES
+    // =========================================================================
+    document.addEventListener('keydown', (event) => {
+      const tag = document.activeElement ? document.activeElement.tagName.toLowerCase() : '';
+      if (tag === 'input' || tag === 'textarea') return;
+
+      if (event.key === 'ArrowRight') {
+        nextStage();
+      } else if (event.key === 'ArrowLeft') {
+        prevStage();
+      }
+    });
+
+    // =========================================================================
+    // INITIALIZATION
+    // =========================================================================
+    window.addEventListener('DOMContentLoaded', () => {
+      renderSituationsUI();
+      renderVocabulary();
+      renderOppositesExercise();
+      renderDefinitionsExercise();
+      goToStage(0);
+      applyUkrainianVisibility();
+    });
+  </script>
+</body>
+</html>
